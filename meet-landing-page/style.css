@@ -23,7 +23,7 @@ body {
  /* Mobile phone */
 
 body {
-
+    font-family: var(--text-font);
     margin: 0 auto;
     background-color: #FAFAFA;
 }
@@ -39,29 +39,37 @@ body {
     justify-content: center;
     margin: 0 auto;
     font-family: var(--text-font);
-    font-size: 150%;
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
-    line-height: 0.8;
-    width: 250px;
+    line-height: 42px;
+    width: 300px;
 }
 
 .middle .description {
-    width: 300px;
-    font-size: 14px;
-    letter-spacing: 1.5px;
+    font-family: var(--text-font);
+    width: 327px;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
     margin: -20px auto 0;
+    line-height: 26px;
+    color: #87879D;
+    
+    
 }   
 
 .download {
+    font-family: var(--text-font);
     background-color: #4D96A9;
     color: #ffffff;
     border-radius: 30px;
     font-size: 18px;
     height: 48px;
     width: 180px;
-    font-size: 12px;
-    margin: 20px 0
+    font-size: 14px;
+    margin: 20px 0;
+    border: none;
 }
 
 .download:hover {
@@ -69,13 +77,15 @@ body {
 }
 
 .faq {
+    font-family: var(--text-font);
     background-color: #855FB1;
     height: 48px;
     width: 110px;
     color: #ffffff;
     border-radius: 30px;
-    font-size: 12px;
-    margin-bottom: 50px;    
+    font-size: 14px;
+    margin-bottom: 50px; 
+    border: none;   
 }
 
 .faq:hover {
@@ -87,8 +97,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .path {
     height: 100px;
@@ -133,14 +141,15 @@ body {
     margin: 10px auto;
 }
 
+
 .description {
     color: #87879d;
-    width: 300px;
     text-align: center;
-    font-weight: lighter;
-    font-size: 14px;
-    margin: 20px auto -50px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.8;
+    margin: 20px auto -50px;
+    width: 315px;
 }
 
 
@@ -182,7 +191,7 @@ h5 {
 .footer .description {
     color: #ffffff;
     margin: 0 auto 0;
-    width: 200px;
+    width: 250px;
     position: relative;
     z-index: 1;
 }
@@ -205,7 +214,7 @@ h5 {
 .footer .overlay {
     width: 100%;
     background-color:#4D96A9;
-    height: 44%;
+    height: 300px;
     position: absolute;
     opacity: 0.8;
     
@@ -248,25 +257,38 @@ h5 {
         left: 0
     }
 
+    .middle .description {
+        font-family: var(--text-font);
+        width: 480px;
+    }
+
     .description {
-        width: 400px;
+        width: 580px;
+        font-family: var(--text-font);
     }
 
     .footer .description {
-        width: 350px;
+        width: 500px;
+    }
+
+    .footer .overlay {
+        height: 300px;
     }
 }
 
 /* Laptop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) { 
     #image-hero-left {
-        max-width: 25%
+        max-width: 25%;
+        position: relative;
+        top: 20px;
     }
 
     #image-hero-right {
+        top: 20px;
         max-width: 25%;
         position: relative;
-        left: 500px;
+        left: 520px;
     }
 
     .group-chat {
@@ -277,7 +299,7 @@ h5 {
     }
 
     .middle .description {
-        width: 410px;
+        width: 440px;
         font-size: 14px;
         letter-spacing: 1.2px;
         position: relative;
@@ -292,14 +314,14 @@ h5 {
         margin-bottom: 0;
         width: 150px;
         position: relative;
-        left: 350px;
+        left: 370px;
         top: -210px
     } 
 
     .middle .download {
         position: relative;
         top: -210px;
-        left: 320px;
+        left: 360px;
     }
 
     .point-1 {
@@ -308,10 +330,11 @@ h5 {
     }
 
     .bitmap-images {
-        width: 100%;
-        margin: 0;
+        width: 80%;
+        margin: 0 auto;
         position: relative;
         top: -150px;  
+
     }
 
     .bitmap-images img {
@@ -328,10 +351,11 @@ h5 {
     .heading {
         position: relative;
         top: -150px;
+        
     }
 
     .description {
-        width: 400px;
+        width: 470px;
         position: relative;
         top: -150px;
     }
@@ -383,5 +407,62 @@ h5 {
       
 }
 
+/* Laptop large */
+@media only screen and (min-width: 1280px){
+    #image-hero-right {
+        position: relative;
+        left: 630px;
+    }
+
+    .middle .download {
+        position: relative;
+        left: 470px;
+    }
+
+    .middle .faq {
+        position: relative;
+        left: 490px;
+    }
+
+    .footer h2 {
+        left: 180px;
+    }
+
+    .footer .description  {
+        position: relative;
+        left: 120px;
+    }
+
+    .footer .download {
+        left: -40px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #image-hero-right {
+        left: 710px
+    }
+
+    .middle .download {
+        left: 550px;
+    }
+
+    .middle .faq {
+        left: 570px
+    }
+}
 
 
+@media only screen and (min-width: 1441px) {
+    body{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 2560px) {
+    body {
+        width: 55%;
+    }
+    
+}
