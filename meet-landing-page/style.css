@@ -249,7 +249,7 @@ h5 {
     .download {
         margin: 20 auto;
         position: relative;
-        left: 200px;
+        left: 210px;
     }
 
     .footer .download {
@@ -314,14 +314,14 @@ h5 {
         margin-bottom: 0;
         width: 150px;
         position: relative;
-        left: 370px;
+        left: 340px;
         top: -210px
     } 
 
     .middle .download {
         position: relative;
         top: -210px;
-        left: 360px;
+        left: 330px;
     }
 
     .point-1 {
@@ -409,6 +409,9 @@ h5 {
 
 /* Laptop large */
 @media only screen and (min-width: 1280px){
+    body {
+        width: 1280px;
+    }
     #image-hero-right {
         position: relative;
         left: 630px;
@@ -439,6 +442,9 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
+    body {
+        width: 1440px;
+    }
     #image-hero-right {
         left: 710px
     }
@@ -448,21 +454,9 @@ h5 {
     }
 
     .middle .faq {
-        left: 570px
+        left: 560px
     }
 }
 
 
-@media only screen and (min-width: 1441px) {
-    body{
-        width: 70%;
-    }
-}
 
-
-@media only screen and (min-width: 2560px) {
-    body {
-        width: 55%;
-    }
-    
-}
