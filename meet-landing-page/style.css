@@ -173,7 +173,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center ;
-    background-image: url(/assets/desktop/image-footer.jpg);
+    background-image: url(/meet-landing-page/assets/desktop/image-footer.jpg);
     height: 300px;
     background-size: cover;
     background-position: center;  
