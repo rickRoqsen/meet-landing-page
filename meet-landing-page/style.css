@@ -74,6 +74,7 @@ body {
 
 .download:hover {
     background-color: #8fe3f9;
+    cursor: pointer;
 }
 
 .faq {
@@ -90,6 +91,8 @@ body {
 
 .faq:hover {
     background-color: #D9B8FF;
+    cursor: pointer;
+
 }
 
 .buttons {
@@ -205,6 +208,7 @@ h5 {
 
 .footer .download:hover {
     background-color: #D9B8FF;
+    cursor: pointer;
 }
 
 .download #footer-span {
